@@ -25,8 +25,9 @@ struct RAReportForm_DayModel: Decodable {
     var oil_num: String
     
     enum MyStructKeys: String, CodingKey {
-        case order_num = "order_num"
-        case oil_num = "oil_num"
+//        case order_num = "order_num"
+//        case oil_num = "oil_num"
+        case order_num, oil_num
     }
     
     init(from decoder: Decoder) throws {
@@ -43,22 +44,19 @@ struct RAReportForm_DayModel: Decodable {
         
         // 方法二：
         // 用 try? 也可以阻止value 的类型不匹配导致的抛出错误，继续 转 model 下去，可以处理 oil_num 本身为 null 的情况
-        let oilNum = try? container.decode(String.self, forKey: .oil_num)
+        oil_num = (try? container.decode(String.self, forKey: .oil_num)) ?? ""
+        if oil_num == "" {
+            let a = try? container.decode(Double.self, forKey: .oil_num)
+            oil_num = String(a ?? 0)
+        }
         
         /**
          针对 json 中 oil_num 字段返回类型不唯一的情况，特殊的解决办法：目前来说比较完善的就是方法二来实现，这种情况出现的原因是后台开发人员没有按照文档上的来导致的，前端做到这样已经很好了；
          */
         
         
-        let order_num = try container.decode(Int.self, forKey: .order_num)
-        
-        
-        self.init(order_num: order_num, oil_num: oilNum ?? "")
+        order_num = try container.decode(Int.self, forKey: .order_num)
     }
     
-    init(order_num: Int, oil_num: String) {
-        self.order_num = order_num
-        self.oil_num = oil_num
-    }
 }
 
