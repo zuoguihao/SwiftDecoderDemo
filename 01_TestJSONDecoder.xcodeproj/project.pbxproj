@@ -13,6 +13,7 @@
 		315553281FBC1EEF00AE00E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315553261FBC1EEF00AE00E1 /* Main.storyboard */; };
 		3155532A1FBC1EEF00AE00E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315553291FBC1EEF00AE00E1 /* Assets.xcassets */; };
 		3155532D1FBC1EEF00AE00E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3155532B1FBC1EEF00AE00E1 /* LaunchScreen.storyboard */; };
+		315B782B2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */; };
 		31C506B01FBC39D3006637F6 /* Test2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C506AF1FBC39D3006637F6 /* Test2Model.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		315553291FBC1EEF00AE00E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3155532C1FBC1EEF00AE00E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3155532E1FBC1EEF00AE00E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainerProtocol+Decode.swift"; sourceTree = "<group>"; };
 		31C506AF1FBC39D3006637F6 /* Test2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +63,7 @@
 				315553221FBC1EEF00AE00E1 /* AppDelegate.swift */,
 				315553241FBC1EEF00AE00E1 /* ViewController.swift */,
 				312D76891FE771F90032B2F5 /* Test3Model.swift */,
+				315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */,
 				31C506AF1FBC39D3006637F6 /* Test2Model.swift */,
 				315553261FBC1EEF00AE00E1 /* Main.storyboard */,
 				315553291FBC1EEF00AE00E1 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 				31C506B01FBC39D3006637F6 /* Test2Model.swift in Sources */,
 				315553251FBC1EEF00AE00E1 /* ViewController.swift in Sources */,
 				315553231FBC1EEF00AE00E1 /* AppDelegate.swift in Sources */,
+				315B782B2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift in Sources */,
 				312D768A1FE771F90032B2F5 /* Test3Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

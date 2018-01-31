@@ -68,40 +68,9 @@ struct RAReportForm_DayModel: Decodable {
 //        oil_num = String((try? container.decode(Double.self, forKey: .oil_num)) ?? 0)
         
         // 方案六：扩展协议，处理 nil 的情况【启用】
-        oil_num = container.ds_decode(String.self, forKey: .oil_num)
-
+        oil_num = container.ds_decode(String.self, forKey: .oil_num, defaultValue: "😁")
 //        order_num = try container.decode(Int.self, forKey: .order_num)
         order_num = container.ds_decode(Int.self, forKey: .order_num)
-        
-        
-        
     }
     
 }
-
-extension KeyedDecodingContainerProtocol {
-    /// 解码为 int 值
-    public func ds_decode(_ type: Int.Type, forKey key: Key) -> Int {
-        return (try? decode(Int.self, forKey: key)) ?? 0
-    }
-    
-    /// 解码为 string 值，，不成功返回""
-    public func ds_decode(_ type: String.Type, forKey key: Key) -> String {
-        if let a = try? decode(String.self, forKey: key) {
-            return a
-        } else {
-            if let a = try? decode(Int.self, forKey: key) {
-                return a.description
-            } else {
-                if let a = try? decode(Double.self, forKey: key) {
-                    return a.description//NSDecimalNumber.init(string: String(a)).stringValue
-                } else {
-                    return ""
-                }
-            }
-            
-        }
-    }
-
-}
-
