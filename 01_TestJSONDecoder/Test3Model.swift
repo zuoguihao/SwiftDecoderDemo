@@ -11,11 +11,13 @@ import Foundation
 /// 加油报表列表
 struct Test3Model: Decodable {
     /// 当天
-    var day: RAReportForm_DayModel?
+    var day: RAReportForm_DayModel
     /// 当月
-    var month: RAReportForm_DayModel?
+    var month: RAReportForm_DayModel
     /// 上月
-    var last_month: RAReportForm_DayModel?
+    var last_month: RAReportForm_DayModel
+    var year: RAReportForm_DayModel
+    var last_year: RAReportForm_DayModel
 }
 
 struct RAReportForm_DayModel: Decodable {
@@ -33,30 +35,43 @@ struct RAReportForm_DayModel: Decodable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: MyStructKeys.self)
         
-        // 方法一：
-        // 这种方案只能先 try？来匹配 string 类型，如果为 nil，再用 try 来匹配 double 类型；这种方案有缺陷：如果 oil_num 本身为 null，则同样会抛出错误，不能转 model
-//        let oilNum: String?
+        // oil_num key 的处理
+        // 方案一：抛出错误，因为 null 不能处理，【舍弃】
 //        if let num = try? container.decode(String.self, forKey: .oil_num) {
-//            oilNum = num
+//            oil_num = num
 //        } else {
-//            oilNum = String(try container.decode(Double.self, forKey: .oil_num))
+//            oil_num = String(try container.decode(Double.self, forKey: .oil_num))
 //        }
+
+        // 方案二：通过，但是代码增加了一个变量，并且有强转符号，不推荐【舍弃】
+//        var a = try? container.decode(String.self, forKey: .oil_num)
+//        if a == nil {
+//            let b = try? container.decode(Double.self, forKey: .oil_num)
+//            a = String(b ?? 0)
+//        }
+//        oil_num = a!
         
-        // 方法二：
-        // 用 try? 也可以阻止value 的类型不匹配导致的抛出错误，继续 转 model 下去，可以处理 oil_num 本身为 null 的情况
-        oil_num = (try? container.decode(String.self, forKey: .oil_num)) ?? ""
-        if oil_num == "" {
-            let a = try? container.decode(Double.self, forKey: .oil_num)
-            oil_num = String(a ?? 0)
+        // 方案三：通过【启用】
+        if let a = try? container.decode(String.self, forKey: .oil_num) {
+            oil_num = a
+        } else {
+            oil_num = String((try? container.decode(Double.self, forKey: .oil_num)) ?? 0)
         }
         
-        /**
-         针对 json 中 oil_num 字段返回类型不唯一的情况，特殊的解决办法：目前来说比较完善的就是方法二来实现，这种情况出现的原因是后台开发人员没有按照文档上的来导致的，前端做到这样已经很好了；
-         */
+        // 方案四：""字符串不能正确处理【舍弃】
+//        oil_num = (try? container.decode(String.self, forKey: .oil_num)) ?? ""
+//        if oil_num == "" {
+//            oil_num = String((try? container.decode(Double.self, forKey: .oil_num)) ?? 0)
+//        }
         
-        
+        // 方案五：""字符串不能正确处理【舍弃】
+//        oil_num = String((try? container.decode(Double.self, forKey: .oil_num)) ?? 0)
+
         order_num = try container.decode(Int.self, forKey: .order_num)
+        
     }
     
 }
+
+
 

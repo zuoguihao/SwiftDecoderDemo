@@ -27,15 +27,23 @@ class ViewController: UIViewController {
     {
             "last_month" : {
                 "oil_num" : 276.00999999999999,
-                "order_num" : 23
+                "order_num" : 1
             },
             "day" : {
                 "oil_num" : null,
-                "order_num" : 0
+                "order_num" : 2
             },
             "month" : {
-                "oil_num" : "37819",
-                "order_num" : 6304
+                "oil_num" : "测试",
+                "order_num" : 3
+            },
+            "year" : {
+                "oil_num" : "",
+                "order_num" : 4
+            },
+            "last_year" : {
+                "oil_num" : true,
+                "order_num" : 5
             }
         }
     """.data(using: .utf8)!
