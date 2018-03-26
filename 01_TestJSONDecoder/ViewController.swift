@@ -26,24 +26,28 @@ class ViewController: UIViewController {
         let json = """
     {
             "last_month" : {
-                "oil_num" : 276.00999999999999,
+                "oil_num" : 276.00990,
                 "order_num" : 1
+            },
+            "last_month2" : {
+                "oil_num" : "276.1",
+                "order_num" : 2.0
             },
             "day" : {
                 "oil_num" : null,
-                "order_num" : 2
+                "order_num" : 3
             },
             "month" : {
                 "oil_num" : "测试",
-                "order_num" : 3
+                "order_num" : 4
             },
             "year" : {
                 "oil_num" : "",
-                "order_num" : 4
+                "order_num" : 5
             },
             "last_year" : {
                 "oil_num" : true,
-                "order_num" : 5
+                "order_num" : 6
             }
         }
     """.data(using: .utf8)!
