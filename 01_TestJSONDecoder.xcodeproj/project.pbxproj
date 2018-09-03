@@ -15,6 +15,7 @@
 		3155532D1FBC1EEF00AE00E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3155532B1FBC1EEF00AE00E1 /* LaunchScreen.storyboard */; };
 		315B782B2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */; };
 		31C506B01FBC39D3006637F6 /* Test2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C506AF1FBC39D3006637F6 /* Test2Model.swift */; };
+		31E2C8C6213D32B400EC625E /* KeyedDecodingContainer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2C8C5213D32B400EC625E /* KeyedDecodingContainer+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3155532E1FBC1EEF00AE00E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainerProtocol+Decode.swift"; sourceTree = "<group>"; };
 		31C506AF1FBC39D3006637F6 /* Test2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2Model.swift; sourceTree = "<group>"; };
+		31E2C8C5213D32B400EC625E /* KeyedDecodingContainer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				315553241FBC1EEF00AE00E1 /* ViewController.swift */,
 				312D76891FE771F90032B2F5 /* Test3Model.swift */,
 				315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */,
+				31E2C8C5213D32B400EC625E /* KeyedDecodingContainer+Extension.swift */,
 				31C506AF1FBC39D3006637F6 /* Test2Model.swift */,
 				315553261FBC1EEF00AE00E1 /* Main.storyboard */,
 				315553291FBC1EEF00AE00E1 /* Assets.xcassets */,
@@ -100,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "左得胜";
 				TargetAttributes = {
 					3155531E1FBC1EEF00AE00E1 = {
@@ -149,6 +152,7 @@
 				315553251FBC1EEF00AE00E1 /* ViewController.swift in Sources */,
 				315553231FBC1EEF00AE00E1 /* AppDelegate.swift in Sources */,
 				315B782B2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift in Sources */,
+				31E2C8C6213D32B400EC625E /* KeyedDecodingContainer+Extension.swift in Sources */,
 				312D768A1FE771F90032B2F5 /* Test3Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -189,6 +193,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -196,6 +201,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -246,6 +252,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -253,6 +260,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

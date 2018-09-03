@@ -10,16 +10,11 @@ import Foundation
 
 struct Swifter: Decodable {
     let fullName: String
-    var id: String
+    var id: Bool?
     let twitter: URL
     
-    init(fullName: String, id: String, twitter: URL) { // default struct initializer
-        self.fullName = fullName
-        self.id = id
-        self.twitter = twitter
-    }
 }
-
+/*
 extension Swifter {
     enum MyStructKeys: String, CodingKey { // declaring our keys
         case fullName = "fullName"
@@ -58,17 +53,17 @@ extension Swifter {
         self.init(fullName: fullName, id: ids, twitter: twitter) // initializing our struct
     }
 }
-
-/// 尝试扩展协议，不行！！！
-extension KeyedDecodingContainerProtocol {
-    func decode(_ type: Int.Type, forKey key: Key) throws -> Int {
-        do {
-            return try decode(Int.self, forKey: key)
-        } catch {
-            return Int(try decode(String.self, forKey: key)) ?? 0
-        }
-    }
-}
+*/
+///// 尝试扩展协议，不行！！！
+//extension KeyedDecodingContainerProtocol {
+//    func decode(_ type: Int.Type, forKey key: Key) throws -> Int {
+//        do {
+//            return try decode(Int.self, forKey: key)
+//        } catch {
+//            return Int(try decode(String.self, forKey: key)) ?? 0
+//        }
+//    }
+//}
 
 
 

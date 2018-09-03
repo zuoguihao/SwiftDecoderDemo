@@ -161,12 +161,12 @@ class ViewController: UIViewController {
 }
 
 struct FlickrImageResult: Codable {
-    let photos : FlickrPagedImageResult?
+    let photos: FlickrPagedImageResult?
     let stat: String
 }
 
 struct FlickrPagedImageResult: Codable {
-    let photo : [FlickrURLs]
+    let photo: [FlickrURLs]
     let page: Int
     let pages: Int
     let perpage: Int
@@ -174,7 +174,7 @@ struct FlickrPagedImageResult: Codable {
 }
 
 struct FlickrURLs: Codable {
-    let id : String
+    let id: String
     let owner: String
     let secret: String
     let server: String
