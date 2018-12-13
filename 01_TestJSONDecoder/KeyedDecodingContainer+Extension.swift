@@ -16,7 +16,7 @@ extension KeyedDecodingContainer {
         if let value = try? decode(Int.self, forKey: key) {
             return value.description
         }
-        if let value = try? decode(Double.self, forKey: key) {
+        if let value = try? decode(Float.self, forKey: key) {
             return value.description
         }
         return nil

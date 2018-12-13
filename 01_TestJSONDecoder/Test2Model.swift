@@ -10,7 +10,7 @@ import Foundation
 
 struct Swifter: Decodable {
     let fullName: String
-    var id: Bool?
+    let id: Bool?
     let twitter: URL
     
 }

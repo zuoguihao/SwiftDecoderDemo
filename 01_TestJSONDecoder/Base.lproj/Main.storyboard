@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,43 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83y-ta-jUz">
+                                <rect key="frame" x="137.5" y="84" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="74M-en-Kpe"/>
+                                </constraints>
+                                <state key="normal" title="测试1"/>
+                                <connections>
+                                    <action selector="btn1Click" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTo-na-EGk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVj-eL-LUg">
+                                <rect key="frame" x="137.5" y="129" width="100" height="30"/>
+                                <state key="normal" title="测试2"/>
+                                <connections>
+                                    <action selector="btn2Click" destination="BYZ-38-t0r" eventType="touchUpInside" id="Szr-ax-TfH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHe-xU-INI">
+                                <rect key="frame" x="137.5" y="169" width="100" height="30"/>
+                                <state key="normal" title="测试3"/>
+                                <connections>
+                                    <action selector="btn3Click" destination="BYZ-38-t0r" eventType="touchUpInside" id="jV8-fq-Ahx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DVj-eL-LUg" firstAttribute="top" secondItem="83y-ta-jUz" secondAttribute="bottom" constant="15" id="9WJ-fZ-Kbz"/>
+                            <constraint firstItem="YHe-xU-INI" firstAttribute="centerX" secondItem="83y-ta-jUz" secondAttribute="centerX" id="HIb-AY-Qqi"/>
+                            <constraint firstItem="83y-ta-jUz" firstAttribute="top" secondItem="14A-JP-6FQ" secondAttribute="bottom" constant="64" id="MYf-5E-AOh"/>
+                            <constraint firstItem="83y-ta-jUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PyN-v8-PRu"/>
+                            <constraint firstItem="DVj-eL-LUg" firstAttribute="width" secondItem="83y-ta-jUz" secondAttribute="width" id="WKC-33-xa9"/>
+                            <constraint firstItem="YHe-xU-INI" firstAttribute="width" secondItem="83y-ta-jUz" secondAttribute="width" id="Y0i-mW-Ci3"/>
+                            <constraint firstItem="DVj-eL-LUg" firstAttribute="centerX" secondItem="83y-ta-jUz" secondAttribute="centerX" id="e9l-0d-EX0"/>
+                            <constraint firstItem="YHe-xU-INI" firstAttribute="top" secondItem="DVj-eL-LUg" secondAttribute="bottom" constant="10" id="kCY-bq-ZaB"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

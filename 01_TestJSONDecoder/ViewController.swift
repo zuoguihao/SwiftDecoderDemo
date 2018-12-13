@@ -13,72 +13,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        test1()
-//        test2()
-        test3()
+        print("点我打断点测试")
     }
     
-    private func test3() {
-        let json = """
-    {
-            "last_month" : {
-                "oil_num" : 276.00990,
-                "order_num" : 1
-            },
-            "last_month2" : {
-                "oil_num" : "276.1",
-                "order_num" : 2.0
-            },
-            "day" : {
-                "oil_num" : null,
-                "order_num" : 3
-            },
-            "month" : {
-                "oil_num" : "测试",
-                "order_num" : 4
-            },
-            "year" : {
-                "oil_num" : "",
-                "order_num" : 5
-            },
-            "last_year" : {
-                "oil_num" : true,
-                "order_num" : 6
-            }
-        }
-    """.data(using: .utf8)!
-        
-        do {
-            let myStruct = try JSONDecoder().decode(Test3Model.self, from: json) // decoding our data
-            print(myStruct)
-        } catch {
-            print(error)
-        }
-    }
-    
-    private func test2() {
-        let json = """
-{
- "fullName": "Federico Zanetello",
- "id": 123456,
- "twitter": "http://twitter.com/zntfdr"
-}
-""".data(using: .utf8)! // our native (JSON) data
-        
-        
-        do {
-            let myStruct = try JSONDecoder().decode(Swifter.self, from: json) // decoding our data
-            print(myStruct) // decoded!
-        } catch {
-            print(error)
-        }
-    }
-
-    private func test1() {
+    @IBAction func btn1Click() {
         let jsonData = """
 {
   "photos": {
@@ -148,8 +89,6 @@ class ViewController: UIViewController {
 }
 """.data(using: .utf8)!
         
-        let data =  JSONDecoder().dataDecodingStrategy
-        print(data)
         do {
             let flickrPhotos = try JSONDecoder().decode(FlickrImageResult.self, from: jsonData)
             print(flickrPhotos)
@@ -157,7 +96,66 @@ class ViewController: UIViewController {
             print(error)
         }
     }
-
+    
+    @IBAction func btn2Click() {
+        let json = """
+{
+ "fullName": "Federico Zanetello",
+ "id": 123456,
+ "twitter": "http://twitter.com/zntfdr"
+}
+""".data(using: .utf8)!
+        
+        do {
+            let myStruct = try JSONDecoder().decode(Swifter.self, from: json)
+            print(myStruct)
+        } catch {
+            print(error)
+        }
+    }
+    
+    @IBAction func btn3Click() {
+        let json = """
+    {
+            "month0" : {
+                "oil_num" : 276.00990,
+                "order_num" : 1
+            },
+            "month1" : {
+                "oil_num" : "276.1",
+                "order_num" : 2.0
+            },
+            "month2" : {
+                "oil_num" : null,
+                "order_num" : 3
+            },
+            "month3" : {
+                "oil_num" : "测试",
+                "order_num" : 4
+            },
+            "month4" : {
+                "oil_num" : "",
+                "order_num" : 5
+            },
+            "month5" : {
+                "oil_num" : true,
+                "order_num" : 6
+            },
+            "month6" : {},
+            "month7" : {
+                "oil_num" : 7,
+                "order_num" : 6
+            },
+        }
+    """.data(using: .utf8)!
+        
+        do {
+            let myStruct = try JSONDecoder().decode(Test3Model.self, from: json) // decoding our data
+            print(myStruct)
+        } catch {
+            print(error)
+        }
+    }
 }
 
 struct FlickrImageResult: Codable {

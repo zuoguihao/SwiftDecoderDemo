@@ -64,10 +64,10 @@
 			children = (
 				315553221FBC1EEF00AE00E1 /* AppDelegate.swift */,
 				315553241FBC1EEF00AE00E1 /* ViewController.swift */,
+				31C506AF1FBC39D3006637F6 /* Test2Model.swift */,
 				312D76891FE771F90032B2F5 /* Test3Model.swift */,
 				315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */,
 				31E2C8C5213D32B400EC625E /* KeyedDecodingContainer+Extension.swift */,
-				31C506AF1FBC39D3006637F6 /* Test2Model.swift */,
 				315553261FBC1EEF00AE00E1 /* Main.storyboard */,
 				315553291FBC1EEF00AE00E1 /* Assets.xcassets */,
 				3155532B1FBC1EEF00AE00E1 /* LaunchScreen.storyboard */,

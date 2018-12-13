@@ -10,15 +10,14 @@ import Foundation
 
 /// 加油报表列表
 struct Test3Model: Decodable {
-    /// 当天
-    let day: RAReportForm_DayModel
-    /// 当月
-    let month: RAReportForm_DayModel
-    /// 上月
-    let last_month: RAReportForm_DayModel
-    let last_month2: RAReportForm_DayModel
-    let year: RAReportForm_DayModel
-    let last_year: RAReportForm_DayModel
+    let month0: RAReportForm_DayModel
+    let month1: RAReportForm_DayModel
+    let month2: RAReportForm_DayModel
+    let month3: RAReportForm_DayModel
+    let month4: RAReportForm_DayModel
+    let month5: RAReportForm_DayModel
+    let month6: RAReportForm_DayModel?
+    let month7: RAReportForm_DayModel
 }
 
 struct RAReportForm_DayModel: Decodable {
@@ -26,5 +25,4 @@ struct RAReportForm_DayModel: Decodable {
     var order_num: Int
     /// 当天/当月/上月服务的总升数
     let oil_num: String?
-        
 }
