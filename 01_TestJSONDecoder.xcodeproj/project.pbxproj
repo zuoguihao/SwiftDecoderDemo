@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310F17BB21C242970014AB5E /* Test4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310F17BA21C242970014AB5E /* Test4.swift */; };
 		312D768A1FE771F90032B2F5 /* Test3Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312D76891FE771F90032B2F5 /* Test3Model.swift */; };
 		315553231FBC1EEF00AE00E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315553221FBC1EEF00AE00E1 /* AppDelegate.swift */; };
 		315553251FBC1EEF00AE00E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315553241FBC1EEF00AE00E1 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		310F17BA21C242970014AB5E /* Test4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test4.swift; sourceTree = "<group>"; };
 		312D76891FE771F90032B2F5 /* Test3Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3Model.swift; sourceTree = "<group>"; };
 		3155531F1FBC1EEF00AE00E1 /* 01_TestJSONDecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01_TestJSONDecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315553221FBC1EEF00AE00E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				315553241FBC1EEF00AE00E1 /* ViewController.swift */,
 				31C506AF1FBC39D3006637F6 /* Test2Model.swift */,
 				312D76891FE771F90032B2F5 /* Test3Model.swift */,
+				310F17BA21C242970014AB5E /* Test4.swift */,
 				315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */,
 				31E2C8C5213D32B400EC625E /* KeyedDecodingContainer+Extension.swift */,
 				315553261FBC1EEF00AE00E1 /* Main.storyboard */,
@@ -153,6 +156,7 @@
 				315553251FBC1EEF00AE00E1 /* ViewController.swift in Sources */,
 				315553231FBC1EEF00AE00E1 /* AppDelegate.swift in Sources */,
 				315B782B2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift in Sources */,
+				310F17BB21C242970014AB5E /* Test4.swift in Sources */,
 				31E2C8C6213D32B400EC625E /* KeyedDecodingContainer+Extension.swift in Sources */,
 				312D768A1FE771F90032B2F5 /* Test3Model.swift in Sources */,
 			);

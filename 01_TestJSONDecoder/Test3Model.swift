@@ -22,7 +22,7 @@ struct Test3Model: Decodable {
 
 struct RAReportForm_DayModel: Decodable {
     /// 当天/当月/上月服务的总笔数
-    var order_num: Int
+    let order_num: Int?
     /// 当天/当月/上月服务的总升数
     let oil_num: String?
 }

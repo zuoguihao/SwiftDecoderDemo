@@ -22,33 +22,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83y-ta-jUz">
-                                <rect key="frame" x="137.5" y="84" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="74M-en-Kpe"/>
-                                </constraints>
+                                <rect key="frame" x="167.5" y="84" width="40" height="30"/>
                                 <state key="normal" title="测试1"/>
                                 <connections>
                                     <action selector="btn1Click" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTo-na-EGk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVj-eL-LUg">
-                                <rect key="frame" x="137.5" y="129" width="100" height="30"/>
+                                <rect key="frame" x="167.5" y="129" width="40" height="30"/>
                                 <state key="normal" title="测试2"/>
                                 <connections>
                                     <action selector="btn2Click" destination="BYZ-38-t0r" eventType="touchUpInside" id="Szr-ax-TfH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHe-xU-INI">
-                                <rect key="frame" x="137.5" y="169" width="100" height="30"/>
+                                <rect key="frame" x="167.5" y="169" width="40" height="30"/>
                                 <state key="normal" title="测试3"/>
                                 <connections>
                                     <action selector="btn3Click" destination="BYZ-38-t0r" eventType="touchUpInside" id="jV8-fq-Ahx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOm-q9-9VI">
+                                <rect key="frame" x="167" y="213" width="41" height="30"/>
+                                <state key="normal" title="测试4"/>
+                                <connections>
+                                    <action selector="btn4Click" destination="BYZ-38-t0r" eventType="touchUpInside" id="MM2-7f-umX"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DVj-eL-LUg" firstAttribute="top" secondItem="83y-ta-jUz" secondAttribute="bottom" constant="15" id="9WJ-fZ-Kbz"/>
+                            <constraint firstItem="AOm-q9-9VI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fm5-ep-5qw"/>
                             <constraint firstItem="YHe-xU-INI" firstAttribute="centerX" secondItem="83y-ta-jUz" secondAttribute="centerX" id="HIb-AY-Qqi"/>
                             <constraint firstItem="83y-ta-jUz" firstAttribute="top" secondItem="14A-JP-6FQ" secondAttribute="bottom" constant="64" id="MYf-5E-AOh"/>
                             <constraint firstItem="83y-ta-jUz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PyN-v8-PRu"/>
@@ -56,6 +61,7 @@
                             <constraint firstItem="YHe-xU-INI" firstAttribute="width" secondItem="83y-ta-jUz" secondAttribute="width" id="Y0i-mW-Ci3"/>
                             <constraint firstItem="DVj-eL-LUg" firstAttribute="centerX" secondItem="83y-ta-jUz" secondAttribute="centerX" id="e9l-0d-EX0"/>
                             <constraint firstItem="YHe-xU-INI" firstAttribute="top" secondItem="DVj-eL-LUg" secondAttribute="bottom" constant="10" id="kCY-bq-ZaB"/>
+                            <constraint firstItem="AOm-q9-9VI" firstAttribute="top" secondItem="YHe-xU-INI" secondAttribute="bottom" constant="14" id="nbT-hi-jD2"/>
                         </constraints>
                     </view>
                 </viewController>

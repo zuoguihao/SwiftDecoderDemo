@@ -119,32 +119,32 @@ class ViewController: UIViewController {
     {
             "month0" : {
                 "oil_num" : 276.00990,
-                "order_num" : 1
+                "order_num" : 0
             },
             "month1" : {
                 "oil_num" : "276.1",
-                "order_num" : 2.0
+                "order_num" : 1.0
             },
             "month2" : {
                 "oil_num" : null,
-                "order_num" : 3
+                "order_num" : 2
             },
             "month3" : {
                 "oil_num" : "测试",
-                "order_num" : 4
+                "order_num" : 3.0000099
             },
             "month4" : {
                 "oil_num" : "",
-                "order_num" : 5
+                "order_num" : 4
             },
             "month5" : {
                 "oil_num" : true,
-                "order_num" : 6
+                "order_num" : 5
             },
             "month6" : {},
             "month7" : {
                 "oil_num" : 7,
-                "order_num" : 6
+                "order_num" : "6"
             },
         }
     """.data(using: .utf8)!
@@ -155,7 +155,50 @@ class ViewController: UIViewController {
         } catch {
             print(error)
         }
+        
     }
+    
+    @IBAction func btn4Click() {
+        let bookJSON1 =
+        """
+{
+ "id": 1,
+ "name": "fake name 1",
+ "cover": {
+ "url": "a.png",
+ "thumb_url": "b.png"
+ }
+}
+"""
+        
+        let bookJSON2 =
+        """
+{
+ "id": 2,
+ "name": "fake name 2",
+ "cover": {
+
+ }
+}
+"""
+        
+        //解析
+        let decoder = JSONDecoder()
+        if #available(iOS 10.0, *) {
+            decoder.dateDecodingStrategy = .iso8601
+        } else {
+            // Fallback on earlier versions
+        }
+        let book1 = try? decoder.decode(Book.self, from: bookJSON1.data(using: .utf8)!)
+        
+        // 解析正常
+        print(book1)
+        let book2 = try? decoder.decode(Book.self, from: bookJSON2.data(using: .utf8)!)
+        // 输出 nil，cover已经是 Optional，为何整个book都解析失败？
+        print(book2)
+    }
+    
+    
 }
 
 struct FlickrImageResult: Codable {
