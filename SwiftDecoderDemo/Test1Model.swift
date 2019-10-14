@@ -1,6 +1,6 @@
 //
 //  Test1Model.swift
-//  01_TestJSONDecoder
+//  SwiftDecoderDemo
 //
 //  Created by 左佳林 on 2019/10/14.
 //  Copyright © 2019 左得胜. All rights reserved.

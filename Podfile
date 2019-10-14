@@ -1,10 +1,10 @@
 platform :ios, '9.0'
 
-target '01_TestJSONDecoder' do
+target 'SwiftDecoderDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for 01_TestJSONDecoder
+  # Pods for SwiftDecoderDemo
   pod 'CleanJSON'
 
 end

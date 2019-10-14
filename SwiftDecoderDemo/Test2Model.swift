@@ -1,6 +1,6 @@
 //
 //  Test2Model.swift
-//  01_TestJSONDecoder
+//  SwiftDecoderDemo
 //
 //  Created by 左得胜 on 2017/11/15.
 //  Copyright © 2017年 左得胜. All rights reserved.

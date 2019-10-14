@@ -18,7 +18,7 @@
 		315B782B2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */; };
 		31C506B01FBC39D3006637F6 /* Test2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C506AF1FBC39D3006637F6 /* Test2Model.swift */; };
 		31E2C8C6213D32B400EC625E /* KeyedDecodingContainer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E2C8C5213D32B400EC625E /* KeyedDecodingContainer+Extension.swift */; };
-		BA457C27B9B535C1E72C6039 /* Pods_01_TestJSONDecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 419BFF3C9B9E3EF926DFF4EE /* Pods_01_TestJSONDecoder.framework */; };
+		CE827EEA83924A176B4FFFC3 /* Pods_SwiftDecoderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323991EA7125DD5EE109C975 /* Pods_SwiftDecoderDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +26,7 @@
 		178626F82354753A00F5C543 /* CleanJSON+CustomAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CleanJSON+CustomAdapter.swift"; sourceTree = "<group>"; };
 		310F17BA21C242970014AB5E /* DealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealModel.swift; sourceTree = "<group>"; };
 		312D76891FE771F90032B2F5 /* Test3Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3Model.swift; sourceTree = "<group>"; };
-		3155531F1FBC1EEF00AE00E1 /* 01_TestJSONDecoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 01_TestJSONDecoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3155531F1FBC1EEF00AE00E1 /* SwiftDecoderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDecoderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315553221FBC1EEF00AE00E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		315553241FBC1EEF00AE00E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		315553291FBC1EEF00AE00E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,9 +35,11 @@
 		315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainerProtocol+Decode.swift"; sourceTree = "<group>"; };
 		31C506AF1FBC39D3006637F6 /* Test2Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test2Model.swift; sourceTree = "<group>"; };
 		31E2C8C5213D32B400EC625E /* KeyedDecodingContainer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extension.swift"; sourceTree = "<group>"; };
-		419BFF3C9B9E3EF926DFF4EE /* Pods_01_TestJSONDecoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_01_TestJSONDecoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323991EA7125DD5EE109C975 /* Pods_SwiftDecoderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDecoderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64103734CA100EF56E274A4B /* Pods-01_TestJSONDecoder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01_TestJSONDecoder.release.xcconfig"; path = "Target Support Files/Pods-01_TestJSONDecoder/Pods-01_TestJSONDecoder.release.xcconfig"; sourceTree = "<group>"; };
+		9E1F84EEC7E5E91BFCA5EFDB /* Pods-SwiftDecoderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecoderDemo.debug.xcconfig"; path = "Target Support Files/Pods-SwiftDecoderDemo/Pods-SwiftDecoderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		B9CA2CFC36EFBCD4608D1771 /* Pods-01_TestJSONDecoder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-01_TestJSONDecoder.debug.xcconfig"; path = "Target Support Files/Pods-01_TestJSONDecoder/Pods-01_TestJSONDecoder.debug.xcconfig"; sourceTree = "<group>"; };
+		F2DECEBAC05FD8ED678DCBF2 /* Pods-SwiftDecoderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecoderDemo.release.xcconfig"; path = "Target Support Files/Pods-SwiftDecoderDemo/Pods-SwiftDecoderDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA457C27B9B535C1E72C6039 /* Pods_01_TestJSONDecoder.framework in Frameworks */,
+				CE827EEA83924A176B4FFFC3 /* Pods_SwiftDecoderDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +59,8 @@
 			children = (
 				B9CA2CFC36EFBCD4608D1771 /* Pods-01_TestJSONDecoder.debug.xcconfig */,
 				64103734CA100EF56E274A4B /* Pods-01_TestJSONDecoder.release.xcconfig */,
+				9E1F84EEC7E5E91BFCA5EFDB /* Pods-SwiftDecoderDemo.debug.xcconfig */,
+				F2DECEBAC05FD8ED678DCBF2 /* Pods-SwiftDecoderDemo.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -64,7 +68,7 @@
 		315553161FBC1EEF00AE00E1 = {
 			isa = PBXGroup;
 			children = (
-				315553211FBC1EEF00AE00E1 /* 01_TestJSONDecoder */,
+				315553211FBC1EEF00AE00E1 /* SwiftDecoderDemo */,
 				315553201FBC1EEF00AE00E1 /* Products */,
 				024B0344A2F553F6722BDD61 /* Pods */,
 				6963681D50DE7A99B8EC740D /* Frameworks */,
@@ -74,12 +78,12 @@
 		315553201FBC1EEF00AE00E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3155531F1FBC1EEF00AE00E1 /* 01_TestJSONDecoder.app */,
+				3155531F1FBC1EEF00AE00E1 /* SwiftDecoderDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		315553211FBC1EEF00AE00E1 /* 01_TestJSONDecoder */ = {
+		315553211FBC1EEF00AE00E1 /* SwiftDecoderDemo */ = {
 			isa = PBXGroup;
 			children = (
 				315553221FBC1EEF00AE00E1 /* AppDelegate.swift */,
@@ -95,13 +99,13 @@
 				3155532B1FBC1EEF00AE00E1 /* LaunchScreen.storyboard */,
 				3155532E1FBC1EEF00AE00E1 /* Info.plist */,
 			);
-			path = 01_TestJSONDecoder;
+			path = SwiftDecoderDemo;
 			sourceTree = "<group>";
 		};
 		6963681D50DE7A99B8EC740D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				419BFF3C9B9E3EF926DFF4EE /* Pods_01_TestJSONDecoder.framework */,
+				323991EA7125DD5EE109C975 /* Pods_SwiftDecoderDemo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,9 +113,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3155531E1FBC1EEF00AE00E1 /* 01_TestJSONDecoder */ = {
+		3155531E1FBC1EEF00AE00E1 /* SwiftDecoderDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 315553311FBC1EEF00AE00E1 /* Build configuration list for PBXNativeTarget "01_TestJSONDecoder" */;
+			buildConfigurationList = 315553311FBC1EEF00AE00E1 /* Build configuration list for PBXNativeTarget "SwiftDecoderDemo" */;
 			buildPhases = (
 				85FA0CC8B028E83231F3CF61 /* [CP] Check Pods Manifest.lock */,
 				3155531B1FBC1EEF00AE00E1 /* Sources */,
@@ -123,9 +127,9 @@
 			);
 			dependencies = (
 			);
-			name = 01_TestJSONDecoder;
+			name = SwiftDecoderDemo;
 			productName = 01_TestJSONDecoder;
-			productReference = 3155531F1FBC1EEF00AE00E1 /* 01_TestJSONDecoder.app */;
+			productReference = 3155531F1FBC1EEF00AE00E1 /* SwiftDecoderDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -145,7 +149,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3155531A1FBC1EEF00AE00E1 /* Build configuration list for PBXProject "01_TestJSONDecoder" */;
+			buildConfigurationList = 3155531A1FBC1EEF00AE00E1 /* Build configuration list for PBXProject "SwiftDecoderDemo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -158,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3155531E1FBC1EEF00AE00E1 /* 01_TestJSONDecoder */,
+				3155531E1FBC1EEF00AE00E1 /* SwiftDecoderDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -191,7 +195,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-01_TestJSONDecoder-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SwiftDecoderDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -204,7 +208,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-01_TestJSONDecoder/Pods-01_TestJSONDecoder-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftDecoderDemo/Pods-SwiftDecoderDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CleanJSON/CleanJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -213,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-01_TestJSONDecoder/Pods-01_TestJSONDecoder-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftDecoderDemo/Pods-SwiftDecoderDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -362,32 +366,32 @@
 		};
 		315553321FBC1EEF00AE00E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9CA2CFC36EFBCD4608D1771 /* Pods-01_TestJSONDecoder.debug.xcconfig */;
+			baseConfigurationReference = 9E1F84EEC7E5E91BFCA5EFDB /* Pods-SwiftDecoderDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CT8FYEK5B;
-				INFOPLIST_FILE = 01_TestJSONDecoder/Info.plist;
+				INFOPLIST_FILE = SwiftDecoderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qtds8810.-1-TestJSONDecoder";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jialin.SwiftDecoderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		315553331FBC1EEF00AE00E1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 64103734CA100EF56E274A4B /* Pods-01_TestJSONDecoder.release.xcconfig */;
+			baseConfigurationReference = F2DECEBAC05FD8ED678DCBF2 /* Pods-SwiftDecoderDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6CT8FYEK5B;
-				INFOPLIST_FILE = 01_TestJSONDecoder/Info.plist;
+				INFOPLIST_FILE = SwiftDecoderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.qtds8810.-1-TestJSONDecoder";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jialin.SwiftDecoderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -395,7 +399,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3155531A1FBC1EEF00AE00E1 /* Build configuration list for PBXProject "01_TestJSONDecoder" */ = {
+		3155531A1FBC1EEF00AE00E1 /* Build configuration list for PBXProject "SwiftDecoderDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3155532F1FBC1EEF00AE00E1 /* Debug */,
@@ -404,7 +408,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		315553311FBC1EEF00AE00E1 /* Build configuration list for PBXNativeTarget "01_TestJSONDecoder" */ = {
+		315553311FBC1EEF00AE00E1 /* Build configuration list for PBXNativeTarget "SwiftDecoderDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				315553321FBC1EEF00AE00E1 /* Debug */,
