@@ -53,6 +53,9 @@ extension KeyedDecodingContainerProtocol {
         if let a = try? decode(String.self, forKey: key) {
             return Int(a) == 1 ? true : false
         }
+        if let a = try? decode(Int.self, forKey: key) {
+            return a == 1 ? true : false
+        }
         return defaultValue
     }
     
