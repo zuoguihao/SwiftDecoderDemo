@@ -54,3 +54,11 @@ struct PhotoCleanJSON: Codable {
     let farm: String
     let ispublic: Bool
 }
+
+enum SexType: Int, Codable, MyCaseDefaultable {
+    static var defaultCase: SexType = .man
+    
+    case unknown = 0
+    case man = 1
+    case woman = 2
+}

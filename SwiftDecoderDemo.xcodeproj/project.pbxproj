@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		171D347423546109003AAE56 /* Test1Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171D347323546109003AAE56 /* Test1Model.swift */; };
-		178626F92354753B00F5C543 /* CleanJSON+CustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178626F82354753A00F5C543 /* CleanJSON+CustomAdapter.swift */; };
+		178626F92354753B00F5C543 /* CustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178626F82354753A00F5C543 /* CustomAdapter.swift */; };
 		310F17BB21C242970014AB5E /* DealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310F17BA21C242970014AB5E /* DealModel.swift */; };
 		312D768A1FE771F90032B2F5 /* Test3Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312D76891FE771F90032B2F5 /* Test3Model.swift */; };
 		315553231FBC1EEF00AE00E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315553221FBC1EEF00AE00E1 /* AppDelegate.swift */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		171D347323546109003AAE56 /* Test1Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1Model.swift; sourceTree = "<group>"; };
-		178626F82354753A00F5C543 /* CleanJSON+CustomAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CleanJSON+CustomAdapter.swift"; sourceTree = "<group>"; };
+		178626F82354753A00F5C543 /* CustomAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAdapter.swift; sourceTree = "<group>"; };
 		310F17BA21C242970014AB5E /* DealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealModel.swift; sourceTree = "<group>"; };
 		312D76891FE771F90032B2F5 /* Test3Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3Model.swift; sourceTree = "<group>"; };
 		3155531F1FBC1EEF00AE00E1 /* SwiftDecoderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDecoderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,7 +94,7 @@
 				310F17BA21C242970014AB5E /* DealModel.swift */,
 				315B782A2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift */,
 				31E2C8C5213D32B400EC625E /* KeyedDecodingContainer+Extension.swift */,
-				178626F82354753A00F5C543 /* CleanJSON+CustomAdapter.swift */,
+				178626F82354753A00F5C543 /* CustomAdapter.swift */,
 				315553291FBC1EEF00AE00E1 /* Assets.xcassets */,
 				3155532B1FBC1EEF00AE00E1 /* LaunchScreen.storyboard */,
 				3155532E1FBC1EEF00AE00E1 /* Info.plist */,
@@ -230,7 +230,7 @@
 				31C506B01FBC39D3006637F6 /* Test2Model.swift in Sources */,
 				315553251FBC1EEF00AE00E1 /* ViewController.swift in Sources */,
 				315553231FBC1EEF00AE00E1 /* AppDelegate.swift in Sources */,
-				178626F92354753B00F5C543 /* CleanJSON+CustomAdapter.swift in Sources */,
+				178626F92354753B00F5C543 /* CustomAdapter.swift in Sources */,
 				315B782B2021CD19007C6C95 /* KeyedDecodingContainerProtocol+Decode.swift in Sources */,
 				310F17BB21C242970014AB5E /* DealModel.swift in Sources */,
 				171D347423546109003AAE56 /* Test1Model.swift in Sources */,

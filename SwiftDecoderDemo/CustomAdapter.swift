@@ -1,5 +1,5 @@
 //
-//  CleanJSON+CustomAdapter.swift
+//  CustomAdapter.swift
 //  SwiftDecoderDemo
 //
 //  Created by 左佳林 on 2019/10/14.
@@ -7,6 +7,8 @@
 //
 
 import CleanJSON
+
+typealias MyCaseDefaultable = CaseDefaultable
 
 struct CustomAdapter: JSONAdapter {
     
@@ -18,9 +20,13 @@ struct CustomAdapter: JSONAdapter {
             return false
         }
         
-        if let intValue = try decoder.decodeIfPresent(Int.self) {
+        if let value = try decoder.decodeIfPresent(Int.self) {
             // 类型不匹配，期望 Bool 类型，实际是 Int 类型
-            return intValue != 0
+            return value != 0
+        }
+        
+        if let value = try decoder.decodeIfPresent(String.self) {
+            return (Int(value) ?? -1) != 0
         }
         
         return false
@@ -30,7 +36,7 @@ struct CustomAdapter: JSONAdapter {
     // 可以通过下面适配器进行类型转换
     func adapt(_ decoder: CleanDecoder) throws -> Int {
         guard let doubleValue = try decoder.decodeIfPresent(Double.self) else { return 0 }
-        
+                
         return Int(doubleValue)
     }
     

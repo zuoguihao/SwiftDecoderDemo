@@ -141,6 +141,7 @@ private extension ViewController {
         {
           "id": "1",
           "name": "测试name1",
+          "sex": 2,
           "cover": {
               "url": "https://www.baidu.com",
               "thumb_url": "https://www.baidu.com"
